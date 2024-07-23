@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Financeiro Enbella</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sistema Financeiro Enbella</h1>
+            <p>Gerencie suas finanças com facilidade</p>
+        </header>
+        
+        <section id="controle-gastos" class="card">
+            <h2>Controle de Gastos</h2>
+            <form id="salario-form" class="form-group">
+                <label for="salario">Salário Mensal:</label>
+                <input type="number" id="salario" required>
+                <button type="submit" class="btn">Salvar Salário</button>
+            </form>
+            <form id="gastos-form" class="form-group">
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" required>
+                
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" required>
+                
+                <label for="categoria">Categoria:</label>
+                <select id="categoria">
+                    <option value="alimentacao">Alimentação</option>
+                    <option value="moradia">Moradia</option>
+                    <option value="transporte">Transporte</option>
+                    <option value="lazer">Lazer</option>
+                    <option value="outros">Outros</option>
+                </select>
+                
+                <button type="submit" class="btn">Adicionar Gasto</button>
+            </form>
+            <ul id="lista-gastos" class="list-group"></ul>
+            <h3>Total de Gastos: <span id="total-gastos">0</span></h3>
+            <h3>Saldo: <span id="saldo">0</span></h3>
+        </section>
+        
+        <section id="dicas-investimentos" class="card">
+            <h2>Dicas de Investimentos</h2>
+            <ul id="lista-dicas">
+                <li>Invista em uma reserva de emergência</li>
+                <li>Considere diversificar seus investimentos</li>
+                <li>Pesquise sobre investimentos de baixo risco</li>
+                <li>Estude sobre renda fixa e variável</li>
+                <li>Busque orientação financeira profissional</li>
+            </ul>
+        </section>
+        
+        <section id="quiz-saude-financeira" class="card">
+            <h2>Quiz de Saúde Financeira</h2>
+            <form id="quiz-form" class="form-group">
+                <label for="idade">Qual é a sua idade?</label>
+                <input type="number" id="idade" required>
+                
+                <label for="dividas">Você possui dívidas? (sim/não)</label>
+                <input type="text" id="dividas" required>
+                
+                <label for="investimentos">Você possui algum investimento? (sim/não)</label>
+                <input type="text" id="investimentos" required>
+                
+                <label for="poupanca">Quanto você possui em poupança?</label>
+                <input type="number" id="poupanca" required>
+                
+                <button type="submit" class="btn">Avaliar Saúde Financeira</button>
+            </form>
+            <p id="resultado-quiz"></p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
